@@ -4,4 +4,3 @@ streamlit==1.2.0
 plotly==5.3.1
 statsmodels==0.12.2
 neuralprophet==0.3.0
-webbrowser
