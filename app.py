@@ -375,37 +375,67 @@ def show_feedback():
         
  
         
+         
+         
+# This will used to create button using html and css to hyperlink
+        
+        
+def create_btn(text,link):
+         
+    btn_css =  '''
+    <style>
+    a.link-btn {
+        color: #fff;
+        background: #337ab7;
+        display:inline-block;
+        border: 1px solid #2e6da4;        
+        font: bold 14px Arial, sans-serif;
+        text-decoration: none;
+        border-radius: 2px;
+        padding: 6px 20px;
+    }
+    a.link-btn:hover {
+        background-color: #245582;
+        border-color: #1a3e5b;
+    }
+</style>'''
+    
+    btn_html = '<a href={} class="link-btn" target="_blank">{}</a>'.format(link,text)
+
+    return btn_css + btn_html
+        
+
+
+
+
+
+
  # This will create another page where user can see about iNeuron and the developer.
         
         
 def show_about():
+         
     st.header('🏢 About iNeuron ')
     
     st.markdown('iNeuron is a product-driven organisation working on state of the art projects for our domestic and international clients carrying a lot of expertise in product development in the area of Computer vision, Deep learning, NLP, Auto ML and Machine learning with industry expertise in warehousing, Security, Surveillance, Healthcare and Inventory management. We also have our training academy where we are providing affordable AI education in Deep learning, Machine Learning and NLP.')
     st.markdown('iNeuron started its journey from being a product development team that caters to domestic as well as international clients, and we continue to develop state of the art products for our prestigious clients all over the world. However, we realised the shortcomings in the field Ai education and realised that data science education was not only very expensive but also lacked practical exposure via live-projects.')
     st.markdown('Our mission is to provide quality education throughout all sets of the economy which is why we did not want the price to be a factor for which individuals would hesitate in attaining education in the respective domains.We believe in growing together which is why we also have our learning community where students can raise discussion related to technical questions and find the solutions to their problems.')
-    
-    a,b,c = st.columns([2,1.5,7])
-    
-    if a.button('LinkedIn Page'):
-        webbrowser.open_new_tab('https://www.linkedin.com/company/ineuron-ai/')
-        
-    if b.button('Website'):
-        webbrowser.open_new_tab('https://ineuron.ai/')
 
+    a,b,c = st.columns([1.53,1.5,7])
+    
+    a.markdown(create_btn('LinkedIn', 'https://www.linkedin.com/company/ineuron-ai/'),True)
+    b.markdown(create_btn('Website', 'https://ineuron.ai/'),True)
+    
+    st.markdown('<br>',True)
     st.header('👨‍💻 About The Developer')
     
     st.markdown('Hi, I am Sachin Sarkar, Intern at iNeuron Intelligence Pvt. Ltd. and Developer of this Global Temperature Climate Change Time Series Analysis and Forecasting Application. I am a Data Science and AI enthusiast and Practitioner. Currently I am doing Bachelors in Data Science from MAKAUT, WB. I am an active contributor to Kaggle Community with holding the status of "Notebook Expert" with ranking less than 2k out of 200k (approx). From the begining of 2021, I am continuously doing multiple Internships and Projects related to Data Science, Machine Learning, Computer Vision, Natural Language Processing, Time Series, Business Intelligence, EDA etc and learning new things each and every day. As per now ( December 2021 ) I am Well experienced in working with Python and Python libraries like pandas, numpy , matplotlib, seaborn, plotly, sklearn, tensorflow, keras, cv2, nltk, flask, streamlit and many more. I am a quick learner and attentive worker. ')
-    a,b,c = st.columns([1.4,1.25,7])
+    a,b,c = st.columns([1.47,1.30,7])
     
-    if a.button('LinkedIn'):
-        webbrowser.open_new_tab('https://www.linkedin.com/in/sachin-sarkar-aba74420b/')
-        
-    if b.button('GitHub'):
-        webbrowser.open_new_tab('https://github.com/sarkarsachin57')
     
-    if c.button('Kaggle'):
-        webbrowser.open_new_tab('https://www.kaggle.com/sachinsarkar')
+    a.markdown(create_btn('LinkedIn', 'https://www.linkedin.com/in/sachin-sarkar-aba74420b/'),True)
+    b.markdown(create_btn('Github', 'https://github.com/sarkarsachin57'),True)
+    c.markdown(create_btn('Kaggle', 'https://www.kaggle.com/sachinsarkar'),True)
 
 
 
