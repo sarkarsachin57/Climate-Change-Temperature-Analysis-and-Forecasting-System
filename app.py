@@ -5,7 +5,7 @@ import numpy as np # For numerical ops
 import streamlit as st # For Web development
 import plotly.express as px # For Visualization
 from neuralprophet import NeuralProphet # For forecasting
-import datetime, json, webbrowser # For some other ops
+import datetime, json # For some other ops
 from statsmodels.tsa.stattools import acf # For acf plotting
 
 
