@@ -249,7 +249,7 @@ def training_and_forecasting(df):
 
 def show_doc():
     
-    st.header('Global Temperature Climate Change Time Series Analysis and Forecasting Application')
+    st.header('Welcome to this Global Temperature Climate Change Time Series Analysis and Forecasting Application')
     
     def usa(x):
         if x == 'United States':
@@ -278,20 +278,28 @@ def show_doc():
     
     
     text = '''
-
+      
+**Abstract :** Climate change is undoubtedly one of the biggest problems in the 21st century. Artificial Intelligence methods have recently contributed in the advancement of accurate prediction tools for the estimation and assessment of extreme environmental events and investigation of the climate change time series. The recent advancement in Artificial Intelligence including the novel machine learning and deep learning algorithms as well as soft computing applications have greatly empowered prediction methods. Through this project, we have explore, analyze the global Climatic trend and pattern on temperature component and forecast the future temperature trends using a state of art time series deep learning model. After the research, exploration and analysis on the historical data and modelling, we build and deploy an end to end web solution on the frontend to view and explore historical data as well as future forecasts generated through the deep learning model.
+<br>
 ##### <center> Get Historical Data and Analysis </center>
 
->Select **"Historical Data and Plotting"** from the dropdown menu inside the sidebar. Then you will - <br><br>
+>Select **"Historical Data and Plotting"** from the menu inside the sidebar. Then you will - <br><br>
 > 1) Get Historical Average Temperatures Per Month upto past 200 years as per the choice of Country, State and Time Range selected.<br><br>
 > 2) Able to download the same data as filtered. <br><br>
 > 3) View the interactive plots to analyze and conclude the Historical Temperature trend, Seasonality and Autocorrelation on the filtered Country, State and Time Range. <br><br>
 
 ##### <center> Get Future Forecasts and Analysis </center>
 
->Select **"Future Data and Plotting"** from the dropdown menu inside the sidebar. Then you will - <br><br>
+>Select **"Future Data and Plotting"** from the menu inside the sidebar. Then you will - <br><br>
 > 1) Get Predicted Future Average Temperatures Per Month upto next 20 years as per the choice of Country, State and Time Range selected. <br><br>
 > 2) Able to download the same data as filtered. <br><br>
 > 3) View the interactive plots to analyze and conclude the Predicted Future Temperature trend, Seasonality and Autocorrelation on the filtered Country, State and Time Range. <br><br>
+
+##### <center> Want to send Message or Feedback Us </center>
+<center>Select <strong>"Feedback Us"</strong> from the menu inside the sidebar.</center> <br><br>
+
+##### <center> Want to known about Us </center>
+<center>Select <strong>"About Us"</strong> from the menu inside the sidebar.</center> <br><br>
 
 '''
     st.markdown(text,unsafe_allow_html=True)
@@ -451,7 +459,7 @@ st.sidebar.title('Temperature Change Analysis and Forecasting')
 
 # this will create a sidebar dropdown menu to controls page switching.
 
-res = st.sidebar.selectbox('You Want : ', ['Documentation','Historical Data and Plotting' ,'Future Data and Plotting','Feedback Us','About Us'])
+res = st.sidebar.radio('You Want : ', ['Documentation','Historical Data and Plotting' ,'Future Data and Plotting','Feedback Us','About Us'])
 
 if res == 'Documentation':
     show_doc()
