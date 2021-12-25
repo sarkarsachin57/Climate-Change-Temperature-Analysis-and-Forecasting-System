@@ -250,7 +250,7 @@ def training_and_forecasting(df):
 def show_doc():
     
     st.header('Welcome to this Global Temperature Climate Change Analysis and Forecasting Application')
-    st.markdown('<br><br>',True)
+    st.markdown('<br>',True)
     def usa(x):
         if x == 'United States':
             return 'United States of America'
