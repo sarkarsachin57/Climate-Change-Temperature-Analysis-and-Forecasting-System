@@ -27,7 +27,7 @@ For this project we used 3 csv file and 1 json. This are – <br><br>
 **GlobalLandTemperaturesByCountry.csv :** For average temperatures group by countries.<br>
 **GlobalLandTemperaturesByState.csv :** For average temperatures group by states.<br>
 **Countries.geo.json :** Fo geographical locations of countries.<br><br>
-This  data was collected from http://berkeleyearth.org/data/<br><br><br>
+The csv data was collected from http://berkeleyearth.org/data/<br><br><br>
 
 
 ### Project Flow :
