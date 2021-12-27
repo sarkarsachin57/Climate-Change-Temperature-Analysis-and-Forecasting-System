@@ -37,12 +37,12 @@ The csv data was collected from http://berkeleyearth.org/data/<br><br><br>
 ### Web Application :
 
 Multi paged web based solution developed using streamlit to show plots, analysis and forecasts.
-Here 5 different web pages developed inside the application. This are – 
-•	Documentation
-•	Historical Data and Plotting
-•	Future Data and Plotting
-•	Feedback Us
-•	About Us
+Here 5 different web pages developed inside the application. This are – <br>
+•	Documentation<br>
+•	Historical Data and Plotting<br>
+•	Future Data and Plotting<br>
+•	Feedback Us<br>
+•	About Us<br>
 
 
 
