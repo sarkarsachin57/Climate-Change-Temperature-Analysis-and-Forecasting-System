@@ -19,6 +19,8 @@ Climate change is undoubtedly one of the biggest problems in the 21st century. A
 
 ![image](https://user-images.githubusercontent.com/83460431/147439991-899ac2c3-a836-4c8e-ac77-f72cd0b19c27.png)
 
+### Project Flow :
+![image](https://user-images.githubusercontent.com/83460431/147440274-e6183722-8364-4859-8171-5dc6512ab3b2.png)
 
 
 View Deployed Solution - <a href="https://share.streamlit.io/sarkarsachin57/climate-change-temperature-analysis-and-forecasting/main/app.py" target="_blank">Click Here</a> 
