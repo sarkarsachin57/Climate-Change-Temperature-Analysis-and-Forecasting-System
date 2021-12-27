@@ -46,7 +46,7 @@ Here 5 different web pages developed inside the application. This are – <br><b
 
 ![image](https://user-images.githubusercontent.com/83460431/147442245-7157e3be-a354-44db-8fae-07dbfa3aba17.png)
 <br>
-Visit this <a href="https://github.com/sarkarsachin57/Climate-Change-Temperature-Analysis-and-Forecasting/blob/main/Documents/f" target="_blank">Documentation</a> to know more about the Project or Website.
+Visit this <a href="https://github.com/sarkarsachin57/Climate-Change-Temperature-Analysis-and-Forecasting/blob/main/Documents/" target="_blank">Documents</a> to know more about the Project or Website.
 
 
 Visit Deployed Solution - <a href="https://share.streamlit.io/sarkarsachin57/climate-change-temperature-analysis-and-forecasting/main/app.py" target="_blank">Click Here</a> 
