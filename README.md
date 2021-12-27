@@ -21,12 +21,12 @@ Climate change is undoubtedly one of the biggest problems in the 21st century. A
 
 ### About Data :
 
-For this project we used 3 csv file and 1 json. This are – 
-GlobalTemperatures.csv : For global average land temperatures.
-GlobalLandTemperaturesByCountry.csv : For average temperatures group by countries.
-GlobalLandTemperaturesByState.csv : For average temperatures group by states.
-Countries.geo.json : Fo geographical locations of countries.
-This  data was collected from http://berkeleyearth.org/data/
+For this project we used 3 csv file and 1 json. This are – <br><br>
+GlobalTemperatures.csv : For global average land temperatures.<br>
+GlobalLandTemperaturesByCountry.csv : For average temperatures group by countries.<br>
+GlobalLandTemperaturesByState.csv : For average temperatures group by states.<br>
+Countries.geo.json : Fo geographical locations of countries.<br>
+This  data was collected from http://berkeleyearth.org/data/<br><br>
 
 
 ### Project Flow :
