@@ -6,16 +6,16 @@ Climate change is undoubtedly one of the biggest problems in the 21st century. A
 
 ### Software and Tools used :
 
-> Python : used as the primary programming and scripting language. <br>
-> Jupyter Notebook : For python scripting, data analysis and research.<br>
-> Spyder : For application backend Programming. <br>
-> Pandas : used for data frame manipulation.<br>
-> NumPy : For array manipulation.<br>
-> Plotly Express : for interactive plots.<br>
-> Neural Prophet : For Deep Learning modelling and forecasting.<br>
-> Streamlit : For frontend development.<br>
-> Html / CSS : For frontend improvement.<br>
-> Git : For project version control.<br>
+**Python :** used as the primary programming and scripting language. <br>
+**Jupyter Notebook :** For python scripting, data analysis and research.<br>
+**Spyder :** For application backend Programming. <br>
+**Pandas :** used for data frame manipulation.<br>
+**NumPy :** For array manipulation.<br>
+**Plotly Express :** for interactive plots.<br>
+**Neural Prophet :** For Deep Learning modelling and forecasting.<br>
+**Streamlit :** For frontend development.<br>
+**Html / CSS :** For frontend improvement.<br>
+**Git :** For project version control.<br>
 
 ![image](https://user-images.githubusercontent.com/83460431/147439991-899ac2c3-a836-4c8e-ac77-f72cd0b19c27.png)
 
