@@ -198,7 +198,7 @@ def autocorrelation_plot(df,country,state,lower_year,upper_year):
     acf_df = pd.DataFrame({'ACF':acf(df['AverageTemperature'],nlags=100,fft=False)})
     acf_df['Upper Level'] = 1.96 / 1.96 / (df.shape[0] ** 0.5 )
     acf_df['Lower Level'] = - 1.96 / 1.96 / (df.shape[0] ** 0.5 )
-    fig = px.line(acf_df,title='Autocorrelation Plot',labels={'index':'Lags','value':'Average Temperature'})
+    fig = px.line(acf_df,title='Autocorrelation Plot',labels={'index':'Lags','value':'Correlation'})
     fig.update_layout(title={'font_size':25,'x':0.5})
     st.plotly_chart(fig)
     
