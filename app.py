@@ -130,7 +130,7 @@ def trend_plot(df,country,state,lower_year,upper_year):
     st.markdown(str_show,unsafe_allow_html=True)
     
     data = df['AverageTemperature'].rolling(window=win).mean()
-    fig = px.line(data,title='Trend Plot', width=750, height=550)
+    fig = px.line(data,title='Trend Plot', width=750, height=550,labels={'dt':'Date','value':'Average Temperature'})
     fig.update_layout(title={'font_size':25,'x':0.5})
     st.plotly_chart(fig)
 
@@ -162,7 +162,7 @@ def seasonal_plot(df,country,state,lower_year,upper_year):
    
     temp = df['AverageTemperature'].groupby(df['AverageTemperature'].index.month).mean()
     temp.index = temp.index.map(month)
-    fig = px.bar(temp,color=temp,title='Seasonal Bar Plot', width=750, height=550)
+    fig = px.bar(temp,color=temp,title='Seasonal Bar Plot', width=750, height=550, labels={'dt':'Date','value':'Average Temperature'})
     fig.update_layout(title={'font_size':25,'x':0.5})
     st.plotly_chart(fig)
 
@@ -198,7 +198,7 @@ def autocorrelation_plot(df,country,state,lower_year,upper_year):
     acf_df = pd.DataFrame({'ACF':acf(df['AverageTemperature'],nlags=100,fft=False)})
     acf_df['Upper Level'] = 1.96 / 1.96 / (df.shape[0] ** 0.5 )
     acf_df['Lower Level'] = - 1.96 / 1.96 / (df.shape[0] ** 0.5 )
-    fig = px.line(acf_df,title='Autocorrelation Plot')
+    fig = px.line(acf_df,title='Autocorrelation Plot',labels={'index':'Lags','value':'Average Temperature'})
     fig.update_layout(title={'font_size':25,'x':0.5})
     st.plotly_chart(fig)
     
