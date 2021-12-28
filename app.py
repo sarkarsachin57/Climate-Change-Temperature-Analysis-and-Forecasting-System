@@ -90,7 +90,7 @@ def show_data(df,country,state,lower_year,upper_year):
     df['month'] = df.index.month.map(month)
     df['Month'] = df['year'].astype(str) + ' , ' + df['month'] 
     
-    a,b = st.columns([5.5,5])
+    a,b = st.columns([5,5])
     a.markdown('**Average Temperatures Data :**')
     b.markdown('**Statistical Description :**')
     a,b = st.columns([5.5,5])
