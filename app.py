@@ -130,7 +130,7 @@ def trend_plot(df,country,state,lower_year,upper_year):
     st.markdown(str_show,unsafe_allow_html=True)
     
     data = df['AverageTemperature'].rolling(window=win).mean()
-    fig = px.line(data,title='Trend Plot', width=750, height=550,labels={'dt':'Date','value':'Average Temperature'})
+    fig = px.line(data,title='Trend Plot', width=750, height=550,labels={'dt':'Date','ds':'Date','value':'Average Temperature'})
     fig.update_layout(title={'font_size':25,'x':0.5})
     st.plotly_chart(fig)
 
@@ -162,7 +162,7 @@ def seasonal_plot(df,country,state,lower_year,upper_year):
    
     temp = df['AverageTemperature'].groupby(df['AverageTemperature'].index.month).mean()
     temp.index = temp.index.map(month)
-    fig = px.bar(temp,color=temp,title='Seasonal Bar Plot', width=750, height=550, labels={'dt':'Date','value':'Average Temperature'})
+    fig = px.bar(temp,color=temp,title='Seasonal Bar Plot', width=750, height=550, labels={'dt':'Date','ds':'Date','value':'Average Temperature'})
     fig.update_layout(title={'font_size':25,'x':0.5})
     st.plotly_chart(fig)
 
